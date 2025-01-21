@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="#" method="POST">
+        <!--Full Name-->
+        <label for="name">Full Name:</label>
+        <input type="text" name="name" placeholder="Enter Full Name Here" required maxlength="30"><br><br>
+       
+        <!--Email-->
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="Enter Email Here" required maxlength="50"><br><br>
+        
+        <!--Username and Password-->
+        <label for="username">Username:</label>
+        <input type="text" name="username" placeholder="Enter Username Here" required maxlength="20"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" placeholder="Enter Password Here" required maxlength="30"><br><br>
+        <label for="reenter">Re-Enter Password:</label>
+        <input type="text" name="reenter" placeholder="Re-Enter Password Here" required maxlength="30"><br><br>
+        
+        <!--Age Group-->
+        <label for="age">Age Group:</label><br><br>
+        <input type="radio" id="age" name="age" value="a">Under 18<br><br>
+        <input type="radio" id="age" name="age" value="b">18-24<br><br>
+        <input type="radio" id="age" name="age" value="c">25-34<br><br>
+        <input type="radio" id="age" name="age" value="d">35-44<br><br>
+        <input type="radio" id="age" name="age" value="e">45-54<br><br>
+        <input type="radio" id="age" name="age" value="f">55+<br><br>
+        
+        <!--Occupation-->
+        <label for="occupation">Occupation:</label>
+        <select name="occupation" id="occupation">
+            <option value="a"></option>
+            <option value="b">Student</option>
+            <option value="c">Employed (Full Time)</option>
+            <option value="d">Employed (Part Time)</option>
+            <option value="e">Unemployed</option>
+            <option value="f">Retired</option>
+        </select><br><br>
+
+        <!--Submit Button-->
+        <button type="submit">Submit</button>
+
+        <!--Reset Button-->
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
